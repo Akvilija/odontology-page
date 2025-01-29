@@ -1,6 +1,6 @@
 const OdontologyServices = (): JSX.Element => {
     return (
-        <ul className="space-y-2 md:space-y-3">
+        <ul className="space-y-2 md:space-y-3 text-center">
             <li>
                 <a href="#!" className="hover:text-blue-600 hover:transition-all duration-200">
                     Dantų implantavimas
