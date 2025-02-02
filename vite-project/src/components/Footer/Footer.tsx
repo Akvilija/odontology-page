@@ -27,13 +27,11 @@ const Footer = (): JSX.Element => {
                     </a>
                 </div>
 
-                {/* Working Hours */}
                 <div className="text-center md:text-left">
                     <SectionTitle title="Darbo laikas" className="text-gray-800" />
                     <WorkingHours />
                 </div>
 
-                {/* Services */}
                 <div className="text-center md:text-left">
                     <SectionTitle title="Paslaugos" className="text-gray-800" />
                     <div className="flex flex-col items-center md:items-start gap-1">
@@ -42,7 +40,6 @@ const Footer = (): JSX.Element => {
                 </div>
             </div>
 
-            {/* Copyright */}
             <div className="text-center mt-10 text-gray-600 text-sm">
                 <p>© 2025 Juvera. Visos teisės saugomos.</p>
             </div>

@@ -1,8 +1,11 @@
 import toothIcon from '../../assets/icons/tooth.svg';
 import clinicPhoto from '../../assets/images/juvera.jpg';
 import HeaderNavigation from '../HeaderNavigation';
+import HeaderPhoto from '../HeaderPhoto';
+import { useState } from 'react';
 
 const Header = (): JSX.Element => {
+    const [headerImage, setHeaderImage] = useState(clinicPhoto);
     return (
         <header className="relative bg-[var(--background-color)] text-2xl w-full text-center h-[600px]">
             <div className='absolute top-0 left-0 w-full bg-white/60 backdrop-blur-md z-10 flex justify-between items-center p-4'>
@@ -14,15 +17,9 @@ const Header = (): JSX.Element => {
                         Dantų gydymas Kėdainiuose
                     </h1>
                 </div>
-                <HeaderNavigation />
+                <HeaderNavigation onSectionChange={setHeaderImage} />
             </div>
-            <div className="relative w-full h-full">
-                <img 
-                    src={clinicPhoto} 
-                    alt="clinic" 
-                    className="w-full h-full object-cover"
-                />
-            </div>
+            <HeaderPhoto imageSrc={headerImage} altText="Clinic Photo" />
         </header>
     );
 }
