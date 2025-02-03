@@ -1,4 +1,5 @@
 import { Service } from "../../types";
+import { Link } from "react-router-dom";
 
 const ServicesItem = ({ service }: { service: Service }): JSX.Element => {
     return (
@@ -15,9 +16,9 @@ const ServicesItem = ({ service }: { service: Service }): JSX.Element => {
                 <h2 className="text-lg font-semibold">{service.name}</h2>
 
 
-                <a href="#" className="block text-sm text-yellow-400 mt-2 hover:underline">
+                <Link to={`/services/${service.id}`} className="block text-sm text-yellow-400 mt-2 hover:underline">
                     Plačiau →
-                </a>
+                </Link>
             </div>
         </div>
     );
