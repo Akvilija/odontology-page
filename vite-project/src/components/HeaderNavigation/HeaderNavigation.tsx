@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router'
 import doctors from '../../assets/images/gydytojai.png';
 import clinicPhoto from '../../assets/images/juvera.jpg';
+import servicesPhoto from '../../assets/images/paslaugoss.png';
 
 type HeaderNavigationProps = {
     onSectionChange: (image: string) => void;
@@ -22,7 +23,12 @@ const HeaderNavigation = ({ onSectionChange }: HeaderNavigationProps): JSX.Eleme
                         Gydytojai
                     </NavLink>
                 </li>
-                <li>Paslaugos</li>
+                <li>
+                    <NavLink to='/services' className={({ isActive }) => isActive ? 'text-[var(--active-color)]' : 'text-black'}
+                        onClick={() => onSectionChange(servicesPhoto)}>
+                        Paslaugos
+                    </NavLink>
+                </li>
                 <li>Kainos</li>
                 <li>Kontaktai</li>
             </ul>
