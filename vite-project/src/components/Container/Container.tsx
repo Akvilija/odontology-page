@@ -5,7 +5,7 @@ type ContainerProps = {
 const Container = ({ children }: ContainerProps): JSX.Element => {
     return (
         <div
-            className='mt-10 mb-10 px-4 sm:px-6 lg:px-8 max-w-screen-xxl '
+            className='mt-10 mb-10 px-4 sm:px-6 lg:px-8 max-w-screen-xxl h-full mx-auto'
         >
             {children}
         </div>
