@@ -18,3 +18,9 @@ export interface Service {
     name: string;
     description: string;
 }
+
+export interface Price {
+    id: number;
+    name: string;
+    price: number;
+}
