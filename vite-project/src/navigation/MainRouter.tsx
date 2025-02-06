@@ -4,6 +4,7 @@ import AboutPage from '../pages/AboutPage/AboutPage';
 import { RouteKey } from './routes';
 import ServicesPage from '../pages/Services/ServicesPage';
 import ServicePage from '../pages/Services/ServicePage';
+import PricesPage from '../pages/Prices/PricesPage';
 
 const MainRouter = (): JSX.Element => (
   <Routes>
@@ -11,6 +12,7 @@ const MainRouter = (): JSX.Element => (
     <Route element={<DoctorsPage />} path={RouteKey.Doctors} />
     <Route element={<ServicesPage />} path={RouteKey.Services} />
     <Route element={<ServicePage />} path={RouteKey.Service} />
+    <Route element={<PricesPage />} path={RouteKey.Prices} />
   </Routes>
 );
 

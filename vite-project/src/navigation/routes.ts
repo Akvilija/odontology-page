@@ -3,4 +3,5 @@ export const RouteKey = {
     Doctors: '/doctors',
     Services: '/services',
     Service: '/services/:id',
+    Prices: '/prices',
   };
